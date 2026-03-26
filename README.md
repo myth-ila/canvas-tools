@@ -118,6 +118,9 @@ DUE_DATE = "2025-12-15T23:59:00Z"
 
 ### 3. Run the Script
 
+> Make sure `quiz_builder.py`, your Excel file, and `canvas_token.txt` 
+> (if using Option 1 for your token) are all in the same folder.
+
 ```bash
 python quiz_builder.py
 ```
