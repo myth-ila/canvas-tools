@@ -24,7 +24,7 @@ time-consuming and error-prone process.
 
 This tool simplifies it: you set up your questions in an Excel spreadsheet 
 (one row per question, columns for answers and correct/incorrect weights), 
-run the script, and the quiz appears on Canvas — fully configured.
+run the script, and the quiz appears on Canvas, fully configured.
 
 The code and API setup is a **one-time effort**. Once configured, creating 
 future quizzes only requires preparing a new Excel file and running the 
