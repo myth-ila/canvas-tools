@@ -57,8 +57,6 @@ Create a file called `canvas_token.txt` in the same folder as the script.
 Paste your token as the only line in the file. The script will read it 
 automatically.
 
-> This file is listed in `.gitignore` so it will never be uploaded to GitHub.
-
 **Option 2: Paste directly in the script**
 
 Open `quiz_builder.py` or `calendar_builder.py` and paste your token between the quotation marks indicated in the code.
