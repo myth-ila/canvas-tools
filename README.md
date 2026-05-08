@@ -3,7 +3,7 @@
 A collection of Python tools for automating tasks on 
 [Canvas LMS](https://www.instructure.com/canvas) using its REST API.
 
-> **Status:** This repository currently contains the Quiz Builder tool. 
+> **Status:** This repository currently contains the Quiz Builder and Calendar Builder tools. 
 > More Canvas automation tools will be added over time.
 
 ## Tools
@@ -13,6 +13,10 @@ A collection of Python tools for automating tasks on
 Creates a quiz on Canvas from an Excel spreadsheet. Define your questions, 
 answer choices, and correct answers in Excel, and the script uploads 
 everything to Canvas automatically.
+
+### 2. Calendar Builder (calendar_builder.py)
+
+Creates calendar events and assignments on Canvas from a CSV file. Define your class sessions, exams, and assignments in a CSV, and the script uploads them all as events on your Canvas course calendar automatically.
 
 ## Motivation
 
@@ -65,7 +69,7 @@ automatically.
 
 **Option 2: Paste directly in the script**
 
-Open `quiz_builder.py` and replace `PASTE_YOUR_TOKEN_HERE` with your token:
+Open `quiz_builder.py` or `calendar_builder.py` and paste your token between the quotation marks indicated in the code.
 
 ```python
 ACCESS_TOKEN = "your_actual_token_here"
@@ -125,7 +129,7 @@ DUE_DATE = "2025-12-15T23:59:00Z"
 python quiz_builder.py
 ```
 
-## Example Output
+### Example Output
 
 ```
  Reading questions from quiz_questions.xlsx...
@@ -141,6 +145,60 @@ python quiz_builder.py
 ```
 
 ### 4. Use the time and mental effort you saved elsewhere! (Maybe research?)
+
+## Calendar Builder Usage
+
+### 1. Prepare Your CSV File
+
+Create a csv file (.csv) with the following columns:
+You could name it `canvas_events.csv`
+
+| Column | Description | Example |
+|---|---|---|
+| `date` | Event date in YYYY-MM-DD format | `2025-09-01` |
+| `title` | Event or assignment name | `Lecture 1: Introduction` |
+| `type` | Either `event` or `assignment` | `event` |
+| `start_time` | Start time in HH:MM (24-hour) format | `09:45` |
+| `end_time` | End time in HH:MM (24-hour) format | `11:15` |
+
+### 2. Configure the Script
+
+Open `calendar_builder.py` and update the Canvas settings here:
+
+```python
+BASE_URL = "https://your-institution.instructure.com"
+COURSE_ID = 1234567  # From your Canvas course URL
+```
+
+Update the calendar event settings as needed:
+
+```python
+TIMEZONE = "America/New_York" 
+LOCATION_NAME = "Zoom"                   # Default location name for calendar events
+ZOOM_LINK = ""                           # Leave blank if only in-person classes
+```
+### 3. Run the Script
+
+> Make sure `calendar_builder.py`, your .csv file, and `canvas_token.txt` 
+> (if using Option 1 for your token) are all in the same folder.
+
+```bash
+python canvas_builder.py
+```
+
+## Example Output
+
+```
+Reading events from canvas_events.csv...
+   Found 28 events
+
+  Created: Lecture 1: Introduction
+  Created: Midterm Exam
+  Created: Final Exam
+
+Done! 28 events created, 0 failed.
+```
+
 
 ## Canvas API Documentation
 
