@@ -14,25 +14,17 @@ Creates a quiz on Canvas from an Excel spreadsheet. Define your questions,
 answer choices, and correct answers in Excel, and the script uploads 
 everything to Canvas automatically.
 
-### 2. Calendar Builder (calendar_builder.py)
+### 2. Calendar Builder (`calendar_builder.py`)
 
 Creates calendar events and assignments on Canvas from a CSV file. Define your class sessions, exams, and assignments in a CSV, and the script uploads them all as events on your Canvas course calendar automatically.
 
 ## Motivation
 
-Setting up a multiple-choice quiz on Canvas is surprisingly tedious. Each 
-question requires multiple clicks — you have to type the question, add each 
-answer option one by one, mark the correct answer, set the point value, and 
-repeat for every single question. For a 40-question quiz, this becomes a 
-time-consuming and error-prone process.
+Setting up course content on Canvas is surprisingly tedious. It may involve creating a 40-question quiz (clicking through each question, adding answer options one by one, marking correct answers) or populating a semester's worth of calendar events and assignment due dates. These necessary actions, when done manually, are time-consuming and error-prone.
 
-This tool simplifies it: you set up your questions in an Excel spreadsheet 
-(one row per question, columns for answers and correct/incorrect weights), 
-run the script, and the quiz appears on Canvas, fully configured.
+The tools in this repository simplify it: you set up your content in a spreadsheet (CSV or Excel), run the script, and the quiz or calendar events appear on Canvas, fully configured.
 
-The code and API setup is a **one-time effort**. Once configured, creating 
-future quizzes only requires preparing a new Excel file and running the 
-script again.
+The code and API setup is a one-time effort. After this initial setup, creating future quizzes or calendar events only requires preparing a new spreadsheet and running the script again.
 
 ## Getting Started
 
