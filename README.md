@@ -192,16 +192,14 @@ Done! 28 events created, 0 failed.
 
 ## Canvas API Documentation
 
-This tool uses the Canvas LMS REST API. For further reference on quiz 
+This tool uses the Canvas LMS API. For further reference on quiz 
 settings, question types, and other API capabilities:
 
-- [Canvas REST API — Quizzes](https://canvas.instructure.com/doc/api/quizzes.html) — Creating and managing quizzes
-- [Canvas REST API — Quiz Questions](https://canvas.instructure.com/doc/api/quiz_questions.html) — Adding and editing quiz questions
-- [Canvas API — Getting Started](https://canvas.instructure.com/doc/api/) — Overview and authentication guide
+- [Canvas API — Getting Started](https://developerdocs.instructure.com/services/canvas)
+- [Canvas API — Quizzes](https://developerdocs.instructure.com/services/canvas/resources/quizzes) — Creating and managing quizzes
+- [Canvas API — Quiz Questions](https://developerdocs.instructure.com/services/canvas/resources/quiz_questions) — Adding and editing quiz questions
+- [Canvas API — Calendar Events](https://developerdocs.instructure.com/services/canvas/resources/calendar_events) 
 
-> **Note:** Canvas is transitioning its API documentation to the 
-> [Instructure Developer Documentation Portal](https://developerdocs.instructure.com/services/canvas). 
-> The older URLs above will redirect after July 1, 2026.
 > If this code doesn't work due to changes in the API please reach out to me at mithila(at)business.unc.edu and I will try to help.
 
 ## Development Process
