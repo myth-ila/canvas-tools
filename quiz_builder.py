@@ -16,15 +16,15 @@ import os
 TOKEN_FILE = "canvas_token.txt"
 ACCESS_TOKEN = "" #Leave this blank, it is only initialising the variable
 
-# Try Option 1: Read from file
+# Checks for Option 1: Read from file
 if os.path.exists(TOKEN_FILE):
     with open(TOKEN_FILE, "r") as f:
         ACCESS_TOKEN = f.read().strip()
     print(f"Token loaded from {TOKEN_FILE}")
 
-# Option 2: If no file found, use the token pasted below
+# Checks for Option 2: If no file found, use the token pasted below
 if not ACCESS_TOKEN:
-    ACCESS_TOKEN = ""  # <-- PASTE YOUR TAKEN HERE, BETWEEN THE QUOTES
+    ACCESS_TOKEN = ""  # <-- PASTE YOUR TOKEN HERE, BETWEEN THE QUOTES
 
 # Check that a token was provided through either option
 if not ACCESS_TOKEN:
