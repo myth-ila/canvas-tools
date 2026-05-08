@@ -176,7 +176,7 @@ ZOOM_LINK = ""                           # Leave blank if only in-person classes
 python canvas_builder.py
 ```
 
-## Example Output
+### Example Output
 
 ```
 Reading events from canvas_events.csv...
