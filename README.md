@@ -47,9 +47,10 @@ pip install pandas requests openpyxl
 1. Go to Account → Settings
 1. Scroll to Approved Integrations
 1. Click + New Access Token
-1. Give it a name (e.g., "Quiz Builder") and click Generate Token 
-_(the same API key will work anytime you want to access Canvas through python, whether you are using it to build a quiz or create calendar events)_
+1. Give it a name (e.g., "Quiz Builder"*) and click Generate Token
 1. Copy the token into a text file — you likely won't be able to see it again
+
+* _The same API key will work anytime you want to access Canvas through python, whether you are using it to build a quiz or create calendar events_
 
 ### Setting Your Token
 **Option 1 (Recommended): Token file**
